@@ -1,0 +1,10 @@
+1- Inciar docker
+    sudo service docker start
+
+docker ps -a                -> Ver archivos docker ejecutandose
+docker stop {NAME_IMAGE}    -> Parar docker
+docker rm {NAME_IMAGE}      -> remover imagen ejecutandose
+
+--> Parar todo de una 
+docker kill $(docker ps -q)
+docker rm $(docker ps -a -q)
